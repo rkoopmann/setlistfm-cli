@@ -1,0 +1,7 @@
+# Real configuration with API key — never commit
+configuration.json
+
+# Xcode user state
+.DS_Store
+xcuserdata/
+*.xcuserstate

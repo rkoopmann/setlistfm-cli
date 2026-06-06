@@ -1,0 +1,5 @@
+{
+	"user": "your-setlist-fm-username",
+	"apiKey": "your-setlist-fm-api-key",
+	"outputPath": "./output/"
+}
