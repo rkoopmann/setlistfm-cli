@@ -111,6 +111,8 @@ struct EventObject: Codable {
     var Artist: String
     var Tour: String
     var SongsPlayed: Int
+    var Lat: Double
+    var Long: Double
     var Link: String
 }
 
@@ -233,6 +235,8 @@ func writeEventsList(_ events: ResponseSetlist, path: String) throws {
             Artist: event.artist.name,
             Tour: event.tour?.name ?? "",
             SongsPlayed: songsPlayed,
+            Lat: event.venue.city.coords.lat,
+            Long: event.venue.city.coords.long,
             Link: event.url
         ))
     }
